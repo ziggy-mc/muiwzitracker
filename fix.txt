@@ -1,0 +1,92 @@
+[repo check] botDir=[BOT_DIR] exists=true
+[git auth] authenticated_remote=[REPO_URL]
+[repo check] cwd=[BOT_DIR] .git_exists=true .git_is_directory=true
+[git rev-parse] cwd=[BOT_DIR] cmd=git -c credential.helper= -c core.askpass= -c credential.useHttpPath=true rev-parse --is-inside-work-tree
+[git rev-parse] stdout:
+true
+
+[git rev-parse] cwd=[BOT_DIR] cmd=git -c credential.helper= -c core.askpass= -c credential.useHttpPath=true rev-parse --git-dir
+[git rev-parse] stdout:
+.git
+
+[git exclude] Runtime exclude patterns already present
+[gitignore] bot .gitignore already unified: [BOT_DIR]
+[git remote] cwd=[BOT_DIR] cmd=git -c credential.helper= -c core.askpass= -c credential.useHttpPath=true remote get-url origin
+[git remote] stdout:
+[REPO_URL]
+
+[git remote] cwd=[BOT_DIR] cmd=git -c credential.helper= -c core.askpass= -c credential.useHttpPath=true remote set-url origin [REPO_URL]
+[git remote] stdout:
+
+[git remote] cwd=[BOT_DIR] cmd=git -c credential.helper= -c core.askpass= -c credential.useHttpPath=true remote -v
+[git remote] stdout:
+origin	[REPO_URL] (fetch)
+origin	[REPO_URL] (push)
+
+[git symbolic-ref --short -q HEAD] stdout:
+main
+
+[git branch debug] current=main expected=main
+[git reset] cwd=[BOT_DIR] cmd=git -c credential.helper= -c core.askpass= -c credential.useHttpPath=true reset -q -- .github/FUNDING.yml .github/dependabot.yml commands/context/.gitkeep
+[git reset] stdout:
+
+[git push guard] removed_hidden_paths=3
+.github/FUNDING.yml
+.github/dependabot.yml
+commands/context/.gitkeep
+[git status --porcelain=v1 -z --untracked-files=all] stdout:
+[repo check] botDir=[BOT_DIR] exists=true
+[git auth] authenticated_remote=[REPO_URL]
+[repo check] cwd=[BOT_DIR] .git_exists=true .git_is_directory=true
+[git rev-parse] cwd=[BOT_DIR] cmd=git -c credential.helper= -c core.askpass= -c credential.useHttpPath=true rev-parse --is-inside-work-tree
+[git rev-parse] stdout:
+true
+
+[git rev-parse] cwd=[BOT_DIR] cmd=git -c credential.helper= -c core.askpass= -c credential.useHttpPath=true rev-parse --git-dir
+[git rev-parse] stdout:
+.git
+
+[git exclude] Runtime exclude patterns already present
+[gitignore] bot .gitignore already unified: [BOT_DIR]
+[git remote] cwd=[BOT_DIR] cmd=git -c credential.helper= -c core.askpass= -c credential.useHttpPath=true remote get-url origin
+[git remote] stdout:
+[REPO_URL]
+
+[git remote] cwd=[BOT_DIR] cmd=git -c credential.helper= -c core.askpass= -c credential.useHttpPath=true remote set-url origin [REPO_URL]
+[git remote] stdout:
+
+[git remote] cwd=[BOT_DIR] cmd=git -c credential.helper= -c core.askpass= -c credential.useHttpPath=true remote -v
+[git remote] stdout:
+origin	[REPO_URL] (fetch)
+origin	[REPO_URL] (push)
+
+[git symbolic-ref --short -q HEAD] stdout:
+main
+
+[git branch debug] current=main expected=main
+[git status --porcelain=v1 -z --untracked-files=all] stdout:
+?? fix.txt
+[git push stage] deployable_paths=1
+fix.txt
+[git add] cwd=[BOT_DIR] cmd=git -c credential.helper= -c core.askpass= -c credential.useHttpPath=true add -A -- fix.txt
+[git add] stdout:
+
+[git add] stderr:
+warning: in the working copy of 'fix.txt', LF will be replaced by CRLF the next time Git touches it
+
+[git status]
+A  fix.txt
+
+[git commit] cwd=[BOT_DIR] cmd=git -c credential.helper= -c core.askpass= -c credential.useHttpPath=true commit -m Update via Zephyr panel
+[git commit] stdout:
+[main 2f21809] Update via Zephyr panel
+ 1 file changed, 38 insertions(+)
+ create mode 100644 fix.txt
+
+[git push debug] args=push origin main
+[git push] cwd=[BOT_DIR] cmd=git -c credential.helper= -c core.askpass= -c credential.useHttpPath=true push origin main
+[git push] stdout:
+
+[git push] stderr:
+remote: Permission to ziggy-mc/dbbuggy.git denied to ziggy-mc.
+fatal: unable to access '[REPO_URL]': The requested URL returned error: 403

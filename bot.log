@@ -1,0 +1,24 @@
+nohup: ignoring input
+[Shard] Starting shards 0-5 of 6
+Shard 0-5 web server running on port 3000
+[Bot Base] - [03-21-2026 01:48:03][[32minfo[39m]: [32m[Database] MongoDB connected[39m
+[Bot Base] - [03-21-2026 01:48:03][[32minfo[39m]: [32m[ComponentLoader] Loaded 1 selectMenus components from selectMenus[39m
+[Bot Base] - [03-21-2026 01:48:03][[32minfo[39m]: [32m[ComponentLoader] Loaded 4 buttons components from buttons[39m
+[Bot Base] - [03-21-2026 01:48:03][[33mwarn[39m]: [33m[ComponentLoader] No modals component files found to load.[39m
+[GuildUpdater] Bot ready. Starting guild info updater...
+(node:32348) DeprecationWarning: The ready event has been renamed to clientReady to distinguish it from the gateway READY event and will only emit under that name in v15. Please use clientReady instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[Bot Base] - [03-21-2026 01:48:04][[33mwarn[39m]: [33mNode.js Warning: The ready event has been renamed to clientReady to distinguish it from the gateway READY event and will only emit under that name in v15. Please use clientReady instead.[39m
+[Bot Base] - [03-21-2026 01:48:04][[33mwarn[39m]: [33m[CommandLoader] No context command files found to load.[39m
+[Bot Base] - [03-21-2026 01:48:04][[32minfo[39m]: [32m[CommandLoader] Successfully synced 19 global commands.[39m
+[Bot Base] - [03-21-2026 01:48:04][[32minfo[39m]: [32m[CommandLoader] Successfully synced 6 developer guild commands.[39m
+[Bot Base] - [03-21-2026 01:48:04][[32minfo[39m]: [32m[CommandLoader] Loaded prefix commands: beta, help, ping[39m
+[Bot Base] - [03-21-2026 01:48:04][[32minfo[39m]: [32mzavro#8041 is online![39m
+(node:32348) Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.
+[Bot Base] - [03-21-2026 01:49:39][[33mwarn[39m]: [33mNode.js Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.[39m
+[MC-STATS] Checking linked MC account for 794228666518339604
+[MC-STATS] No mcUsername found on Users record for 794228666518339604
+[MC-STATS] No linked Minecraft account for user 794228666518339604 — checked Users and McConnect
+[MC-STATS] Checking linked MC account for 794228666518339604
+[MC-STATS] No mcUsername found on Users record for 794228666518339604
+[MC-STATS] No linked Minecraft account for user 794228666518339604 — checked Users and McConnect
